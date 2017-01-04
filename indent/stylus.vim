@@ -98,11 +98,11 @@
 
   "let group = synIDattr(synID(lnum,lastcol,1),'name')
 
-   for debugging only
+"   for debugging only
   "echo group
 
-   if group !~? 'css.*' && line =~? ')\s*$' " match user functions
-     return increase
+"   if group !~? 'css.*' && line =~? ')\s*$' " match user functions
+"     return increase
   "if group =~? '\v^%(cssTagName|cssClassName|cssIdentifier|cssSelectorOp|cssSelectorOp2|cssBraces|cssAttributeSelector|cssPseudo|stylusId|stylusClass)$'
     "return increase
   "elseif (group == 'stylusUserFunction') && (indent(lnum) == '0') " mixin definition
